@@ -1,0 +1,969 @@
+/* Optional modern presentation. Both layouts share the clinical components,
+   source data, pending uploads, and review workflow. */
+.layout-switch {
+  display: inline-flex;
+  padding: 3px;
+  gap: 2px;
+  border: 1px solid #7890a8;
+  border-radius: 6px;
+  background: #284866;
+  flex-shrink: 0;
+}
+.layout-switch button {
+  border: 0;
+  border-radius: 4px;
+  padding: 4px 9px;
+  font-size: 11px;
+  color: #e5edf6;
+  background: transparent;
+}
+.layout-switch button[aria-pressed="true"] {
+  background: #fff;
+  color: #315575;
+  box-shadow: 0 1px 4px #15294520;
+  font-weight: 600;
+}
+.modern-ehr {
+  --line: #e3e9f1;
+  --muted: #61718a;
+  --teal: #3e64d8;
+  --color-primary: #3e64d8;
+  --color-ring: #3e64d8;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 14px;
+  background: #f5f7fb;
+  color: #26364c;
+  display: grid;
+  grid-template-columns: 68px minmax(0, 1fr);
+}
+.modern-ehr .main-shell {
+  height: auto;
+  min-height: 100dvh;
+  display: block;
+}
+.modern-ehr .bg-primary {
+  background-color: #486bd5;
+}
+.modern-rail {
+  position: sticky;
+  top: 0;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 22px 8px 18px;
+  background: #1b2943;
+  color: #b9c8e0;
+}
+.modern-rail-brand {
+  background: #5b7de1;
+  color: #fff;
+  border-radius: 12px;
+  height: 42px;
+  width: 42px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 26px;
+}
+.modern-rail > button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  border: 0;
+  color: #b6c5dd;
+  background: transparent;
+}
+.modern-rail > button:hover {
+  color: #fff;
+  background: #293f60;
+}
+.modern-rail > button.active {
+  color: #eaf0ff;
+  background: #344c77;
+  box-shadow: inset 3px 0 #8aa8ff;
+}
+.modern-rail-bottom {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 7px;
+}
+.modern-rail-bottom span {
+  border: 1px solid #526583;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+}
+.modern-rail-bottom small {
+  font-size: 6px;
+  letter-spacing: 0.8px;
+  color: #9aaeca;
+}
+.modern-ehr .topbar {
+  height: 74px;
+  padding: 0 28px;
+  background: #fff;
+  color: #24354c;
+  border-color: #e4eaf3;
+}
+.modern-ehr .brand > svg {
+  display: none;
+}
+.modern-ehr .brand > span {
+  font-size: 22px;
+  letter-spacing: -0.7px;
+}
+.modern-ehr .brand b {
+  color: #4267d7;
+}
+.modern-ehr .brand small {
+  color: #7b889d;
+  border-color: #e2e8f1;
+  font-size: 9px;
+}
+.modern-ehr .topbar-actions {
+  gap: 13px;
+}
+.modern-ehr .layout-switch {
+  background: #f0f3f9;
+  border-color: #e0e6f0;
+  border-radius: 8px;
+  padding: 4px;
+}
+.modern-ehr .layout-switch button {
+  color: #677993;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.modern-ehr .layout-switch button[aria-pressed="true"] {
+  color: #3a5fc9;
+  background: #fff;
+}
+.modern-ehr .search-button {
+  border-radius: 8px;
+  height: 36px;
+  border-color: #e3e9f2;
+  min-width: 180px;
+  background: #f8fafd;
+  color: #697c95;
+}
+.modern-ehr .top-tool {
+  color: #667b96;
+}
+.modern-ehr .top-tool:hover {
+  background: #eef3fb;
+  border-radius: 6px;
+}
+.modern-ehr .icon-button {
+  height: 34px;
+  width: 34px;
+  border-radius: 8px;
+  background: #fff;
+  color: #667c99;
+  border-color: #e1e8f1;
+}
+.modern-ehr .topbar .demo-badge {
+  font-size: 9px;
+  border-radius: 5px;
+  background: #fff9ed;
+  padding: 6px 8px;
+}
+.modern-ehr .clinician {
+  border-color: #e4eaf3;
+  padding-left: 14px;
+  gap: 9px;
+}
+.modern-ehr .clinician-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: #edf1fc;
+  color: #5069a8;
+}
+.modern-ehr .clinician strong {
+  color: #314662;
+  font-size: 12px;
+}
+.modern-ehr .clinician select {
+  color: #6c7e96;
+  font-size: 11px;
+  margin-top: 4px;
+}
+.modern-ehr .workspace-header {
+  padding: 0 28px;
+}
+.modern-ehr .open-patient-tabs {
+  background: transparent;
+  border: 0;
+  gap: 7px;
+  padding: 18px 0 14px;
+  min-height: 63px;
+  align-items: center;
+}
+.modern-ehr .workspace-label {
+  padding: 0 12px 0 0;
+  font-size: 11px;
+  color: #7a8a9f;
+}
+.modern-ehr .open-patient-tabs button {
+  border: 1px solid transparent;
+  border-radius: 7px;
+  padding: 7px 11px;
+  background: transparent;
+  color: #6a7d95;
+  font-size: 12px;
+}
+.modern-ehr .open-patient-tabs button small {
+  display: none;
+}
+.modern-ehr .open-patient-tabs button.active {
+  box-shadow: none;
+  background: #e9effc;
+  border-color: #d8e2f6;
+  color: #3b5fb6;
+}
+.modern-ehr .open-patient-tabs button:hover {
+  background: #eef2f9;
+}
+.modern-ehr .patient-banner {
+  min-height: 100px;
+  padding: 20px 23px;
+  background: #fff;
+  border: 1px solid #e0e7f1;
+  border-radius: 12px;
+  box-shadow: 0 3px 12px #304a6b03;
+  gap: 20px;
+}
+.modern-ehr .patient-banner .patient-avatar {
+  display: grid;
+  height: 58px;
+  width: 58px;
+  border-radius: 16px;
+  background: #eaf0fc;
+  color: #5375b1;
+  font-size: 21px;
+}
+.modern-ehr .patient-identity {
+  gap: 15px;
+}
+.modern-ehr .patient-heading h1 {
+  font-size: 25px;
+  letter-spacing: -0.65px;
+}
+.modern-ehr .patient-identity p {
+  font-size: 12px;
+  color: #72829a;
+  margin-top: 6px;
+}
+.modern-ehr .synthetic-label {
+  background: #f3f5f9;
+  color: #70829b;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+.modern-ehr .patient-tags {
+  gap: 7px;
+}
+.modern-ehr .patient-tags .status-badge {
+  font-size: 10px;
+  padding: 6px 8px;
+}
+.modern-ehr .workspace-grid {
+  display: grid;
+  grid-template-columns: 246px minmax(0, 1fr) 330px;
+  gap: 20px;
+  padding: 22px 28px 30px;
+  overflow: visible;
+  align-items: start;
+}
+.modern-ehr .left-column {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  gap: 16px;
+  position: sticky;
+  top: 20px;
+  max-height: calc(100dvh - 40px);
+  overflow: auto;
+  scrollbar-width: thin;
+  grid-row: auto;
+}
+.modern-ehr .storyboard-identity {
+  display: none;
+}
+.modern-ehr .clinical-card {
+  border: 1px solid #e0e7f1;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #263e5f02;
+  background: #fff;
+}
+.modern-ehr .card-head {
+  padding: 15px 17px;
+  min-height: 50px;
+  border-bottom: 1px solid #eff2f7;
+  background: #fff;
+}
+.modern-ehr .card-head h3 {
+  font-size: 13px;
+  color: #2d405d;
+  gap: 8px;
+}
+.modern-ehr .card-head h3 svg {
+  color: #5678af;
+  height: 16px;
+  width: 16px;
+}
+.modern-ehr .card-body {
+  padding: 17px;
+}
+.modern-ehr .left-column .card-head {
+  padding: 15px;
+}
+.modern-ehr .left-column .card-body {
+  padding: 15px;
+}
+.modern-ehr .left-column .field-grid {
+  gap: 13px 10px;
+}
+.modern-ehr .left-column .field strong {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.modern-ehr .left-column .team-row {
+  padding: 8px 0;
+}
+.modern-ehr .left-column .card-head .status-badge {
+  font-size: 9px;
+  padding: 4px 5px;
+}
+.modern-ehr .eyebrow {
+  color: #7a8ba0;
+  font-size: 9px;
+  letter-spacing: 0.7px;
+}
+.modern-ehr .separator {
+  background: #e8edf5;
+  margin: 15px 0;
+}
+.modern-ehr .input {
+  border-radius: 7px;
+  border-color: #dae3ef;
+  min-height: 36px;
+}
+.modern-ehr .select-patient {
+  padding: 8px;
+  font-size: 11px;
+}
+.modern-ehr .team-avatar {
+  background: #f0f4fa;
+  color: #6984aa;
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+}
+.modern-ehr .alert-list > div {
+  border-color: #edf1f7;
+  padding: 11px 0;
+}
+.modern-ehr .vital {
+  background: #f8fafd;
+  border-color: #ebeff6;
+  border-radius: 6px;
+  padding: 9px;
+}
+.modern-ehr .chart-workspace {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+}
+.modern-ehr .patient-navigation {
+  background: transparent;
+  border: 0;
+  gap: 13px;
+  margin-bottom: 18px;
+}
+.modern-ehr .workspace-actions {
+  background: transparent;
+  padding: 0;
+  border: 0;
+  gap: 8px;
+}
+.modern-ehr .workspace-actions button {
+  height: 34px;
+  border-radius: 7px;
+  padding: 0 12px;
+  font-size: 12px;
+}
+.modern-ehr .patient-tabs {
+  background: #eaf0f8;
+  border: 1px solid #e1e8f2;
+  border-radius: 9px;
+  padding: 4px;
+  gap: 3px;
+}
+.modern-ehr .patient-tabs button {
+  border: 0;
+  border-radius: 6px;
+  padding: 9px 10px;
+  gap: 6px;
+  color: #60748f;
+  font-size: 11px;
+}
+.modern-ehr .patient-tabs button.active {
+  box-shadow: 0 1px 4px #31528a12;
+  background: #fff;
+  color: #345cc3;
+}
+.modern-ehr .patient-tabs button:hover {
+  background: #f7faff;
+}
+.modern-ehr .center-column {
+  padding: 0;
+  gap: 17px;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+}
+.modern-ehr .center-title h2 {
+  color: #2c3e59;
+  font-size: 21px;
+  font-weight: 650;
+  letter-spacing: -0.5px;
+}
+.modern-ehr .stats-grid {
+  background: transparent;
+  border: 0;
+  gap: 11px;
+}
+.modern-ehr .stat {
+  border: 1px solid #e0e7f1;
+  border-radius: 10px;
+  padding: 15px;
+}
+.modern-ehr .stat:last-child {
+  border: 1px solid #e0e7f1;
+}
+.modern-ehr .stat > span {
+  color: #7b8aa1;
+  font-size: 10px;
+  margin-bottom: 8px;
+}
+.modern-ehr .stat > strong {
+  font-size: 27px;
+  color: #354e76;
+}
+.modern-ehr .stat > strong.amber-text {
+  color: #ad8027;
+}
+.modern-ehr .stat > strong.stat-status {
+  font-size: 14px;
+  padding-top: 7px;
+  min-height: 33px;
+  color: #4f6caf;
+}
+.modern-ehr .stat > small {
+  font-size: 10px;
+  color: #75869e;
+  margin-top: 6px;
+}
+.modern-ehr .diagnosis-panel {
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+.modern-ehr .diagnosis-top {
+  border-color: #edf1f7;
+  padding-bottom: 15px;
+}
+.modern-ehr .diagnosis-top h4 {
+  font-size: 15px;
+  color: #2e4567;
+}
+.modern-ehr .diagnosis-top p {
+  font-size: 11px;
+  color: #7d8da2;
+  margin-top: 5px;
+}
+.modern-ehr .profile-grid {
+  gap: 17px 22px;
+  margin: 18px 0;
+}
+.modern-ehr .profile-grid dt {
+  font-size: 11px;
+  color: #7a8ba3;
+}
+.modern-ehr .profile-grid dd {
+  font-size: 13px;
+  margin-top: 5px;
+}
+.modern-ehr .profile-grid dd small {
+  font-size: 10px;
+  margin-top: 5px;
+}
+.modern-ehr .biomarker-grid {
+  border: 0;
+  gap: 8px;
+}
+.modern-ehr .biomarker {
+  background: #f4f7fd;
+  border: 1px solid #e4eaf5;
+  border-radius: 8px;
+  padding: 12px 7px;
+}
+.modern-ehr .biomarker:last-child {
+  border: 1px solid #e4eaf5;
+}
+.modern-ehr .biomarker > span {
+  font-size: 10px;
+  margin-bottom: 6px;
+  color: #7286a5;
+}
+.modern-ehr .biomarker > strong {
+  color: #4167ad;
+  font-size: 14px;
+}
+.modern-ehr .biomarker > strong.pending {
+  color: #9b762d;
+}
+.modern-ehr .biomarker > small {
+  font-size: 9px;
+  margin-top: 6px;
+}
+.modern-ehr .status-badge {
+  border-radius: 5px;
+}
+.modern-ehr .badge-teal {
+  color: #37775d;
+  border-color: #d7e9e0;
+  background: #f0f8f3;
+}
+.modern-ehr .badge-amber {
+  background: #fffaed;
+  color: #99721f;
+  border-color: #efdfb8;
+}
+.modern-ehr .badge-neutral {
+  background: #f5f7fb;
+  color: #6c7e98;
+  border-color: #e3e9f2;
+}
+.modern-ehr .timeline {
+  padding: 18px 20px 8px 31px;
+}
+.modern-ehr .timeline li {
+  padding-bottom: 18px;
+  padding-left: 18px;
+}
+.modern-ehr .timeline-top strong {
+  font-size: 13px;
+}
+.modern-ehr .timeline p {
+  font-size: 12px;
+  line-height: 1.6;
+  margin-top: 4px;
+  color: #71839c;
+}
+.modern-ehr .timeline-top span {
+  font-size: 11px;
+}
+.modern-ehr .card-footer {
+  background: #fafbfd;
+  padding: 10px 16px;
+  border-color: #edf1f6;
+  color: #71839a;
+}
+.modern-ehr th {
+  background: #fafbfd;
+  color: #7c8da5;
+  font-size: 10px;
+}
+.modern-ehr td {
+  font-size: 12px;
+}
+.modern-ehr th,
+.modern-ehr td {
+  padding: 13px 16px;
+  border-color: #edf1f6;
+}
+.modern-ehr .document-name strong {
+  font-size: 12px;
+}
+.modern-ehr .file-icon {
+  background: #edf3ff;
+  color: #6787c2;
+  border-radius: 7px;
+  width: 30px;
+  height: 35px;
+}
+.modern-ehr .text-button {
+  color: #476dca;
+  font-size: 12px;
+}
+.modern-ehr .right-column {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  position: sticky;
+  top: 20px;
+  max-height: calc(100dvh - 40px);
+  overflow: auto;
+  scrollbar-width: thin;
+  grid-column: auto;
+}
+.modern-ehr .copilot {
+  border-radius: 12px;
+  border: 1px solid #dedff0;
+  background: #fff;
+}
+.modern-ehr .copilot-head {
+  background: linear-gradient(130deg, #f0efff, #f6f8ff);
+  padding: 19px;
+  border-color: #e7e6f6;
+}
+.modern-ehr .copilot-head .ai-mark {
+  height: 34px;
+  width: 34px;
+  border-radius: 10px;
+  background: #7768c5;
+}
+.modern-ehr .copilot-head h2 {
+  font-size: 18px;
+  margin-top: 14px;
+  color: #3e3d68;
+  letter-spacing: -0.4px;
+}
+.modern-ehr .copilot-head p {
+  color: #797b9b;
+  font-size: 12px;
+  margin-top: 6px;
+  line-height: 1.6;
+}
+.modern-ehr .copilot-section {
+  padding: 18px;
+  border-color: #edf0f7;
+}
+.modern-ehr .section-title {
+  margin-bottom: 12px;
+}
+.modern-ehr .section-title h3 {
+  color: #3c4b65;
+  font-size: 13px;
+}
+.modern-ehr .upload-zone {
+  background: #fafbff;
+  border-color: #c8d0e8;
+  border-radius: 9px;
+  padding: 19px 10px;
+  gap: 8px;
+  color: #6b7eb0;
+}
+.modern-ehr .small-label {
+  font-size: 11px;
+  margin-top: 15px;
+  margin-bottom: 6px;
+}
+.modern-ehr .copilot .input {
+  font-size: 12px;
+}
+.modern-ehr .copilot button.rounded-lg,
+.modern-ehr .copilot button.rounded-md {
+  border-radius: 7px;
+}
+.modern-ehr .copilot-summary {
+  font-size: 13px;
+  color: #5c6f8a;
+  line-height: 1.7;
+}
+.modern-ehr .gap-list li {
+  font-size: 12px;
+  padding: 5px 0;
+}
+.modern-ehr .source-empty {
+  border-radius: 8px;
+  padding: 17px 10px;
+}
+.modern-ehr .review-actions button {
+  height: 34px;
+}
+.modern-ehr .notice {
+  border-radius: 7px;
+  padding: 13px;
+}
+.modern-ehr .note-box {
+  border-radius: 8px;
+}
+.modern-ehr .workspace-footer {
+  padding: 12px 28px;
+  background: #f5f7fb;
+  color: #8493a8;
+  border-color: #e3e9f2;
+  font-size: 10px;
+}
+@media (min-width: 1700px) {
+  .modern-ehr .workspace-grid {
+    grid-template-columns: 260px minmax(0, 1fr) 350px;
+    gap: 24px;
+  }
+  .modern-ehr .patient-tabs button {
+    padding: 11px 14px;
+    font-size: 12px;
+  }
+  .modern-ehr .patient-tabs {
+    justify-content: space-between;
+  }
+  .modern-ehr .card-body {
+    padding: 20px;
+  }
+  .modern-ehr .card-head {
+    padding: 17px 20px;
+  }
+}
+@media (max-width: 1450px) {
+  .modern-ehr .brand small {
+    display: none;
+  }
+  .modern-ehr .topbar {
+    padding-inline: 20px;
+  }
+  .modern-ehr .topbar-actions {
+    gap: 8px;
+  }
+  .modern-ehr .top-tool span {
+    display: none;
+  }
+  .modern-ehr .workspace-header {
+    padding-inline: 20px;
+  }
+  .modern-ehr .workspace-grid {
+    grid-template-columns: 220px minmax(0, 1fr) 300px;
+    gap: 16px;
+    padding-inline: 20px;
+  }
+  .modern-ehr .patient-tags {
+    max-width: 46%;
+  }
+  .modern-ehr .patient-heading h1 {
+    font-size: 23px;
+  }
+  .modern-ehr .stat {
+    padding: 12px;
+  }
+  .modern-ehr .biomarker-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 1279px) {
+  .modern-ehr .workspace-grid {
+    grid-template-columns: 220px minmax(0, 1fr);
+  }
+  .modern-ehr .left-column {
+    grid-column: 1;
+    grid-row: 1 / 3;
+  }
+  .modern-ehr .right-column {
+    grid-column: 2;
+    position: static;
+    max-height: none;
+  }
+  .modern-ehr .copilot-head {
+    display: block;
+  }
+  .modern-ehr .copilot-head > .flex-row {
+    max-width: 340px;
+  }
+  .modern-ehr .topbar .demo-badge {
+    display: none;
+  }
+  .modern-ehr .search-button {
+    min-width: 145px;
+  }
+  .modern-ehr .clinician strong {
+    font-size: 10px;
+  }
+}
+@media (max-width: 1000px) {
+  .modern-ehr .workspace-grid {
+    grid-template-columns: 190px minmax(0, 1fr);
+    gap: 14px;
+    padding: 18px 16px;
+  }
+  .modern-ehr .workspace-header {
+    padding: 0 16px;
+  }
+  .modern-ehr .topbar {
+    height: auto;
+    min-height: 70px;
+    flex-wrap: wrap;
+    padding: 14px 16px;
+    gap: 14px;
+  }
+  .modern-ehr .topbar-actions {
+    flex-wrap: wrap;
+  }
+  .modern-ehr .patient-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 18px;
+    gap: 15px;
+  }
+  .modern-ehr .patient-tags {
+    max-width: none;
+    justify-content: flex-start;
+  }
+  .modern-ehr .left-column .card-body {
+    padding: 12px;
+  }
+  .modern-ehr .left-column .card-head {
+    padding: 12px;
+    flex-wrap: wrap;
+  }
+  .modern-ehr .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .modern-ehr .stat {
+    border: 1px solid #e0e7f1;
+  }
+  .modern-ehr .center-title h2 {
+    font-size: 19px;
+  }
+}
+@media (max-width: 650px) {
+  .modern-ehr {
+    display: block;
+  }
+  .modern-rail {
+    display: none;
+  }
+  .modern-ehr .topbar {
+    padding: 12px;
+    min-height: 0;
+    gap: 10px;
+  }
+  .modern-ehr .brand > span {
+    font-size: 20px;
+  }
+  .modern-ehr .topbar-actions {
+    justify-content: flex-start;
+    gap: 7px;
+  }
+  .modern-ehr .search-button {
+    min-width: 30px;
+    height: 30px;
+    width: 30px;
+  }
+  .modern-ehr .icon-button {
+    width: 30px;
+    height: 30px;
+  }
+  .modern-ehr .layout-switch button {
+    padding: 4px 7px;
+  }
+  .modern-ehr .top-tool {
+    padding: 4px;
+  }
+  .modern-ehr .clinician {
+    padding-left: 5px;
+  }
+  .modern-ehr .clinician select {
+    width: 105px;
+  }
+  .modern-ehr .workspace-header {
+    padding: 0 12px;
+  }
+  .modern-ehr .open-patient-tabs {
+    padding: 12px 0;
+    gap: 2px;
+    min-height: 0;
+  }
+  .modern-ehr .open-patient-tabs button {
+    padding: 6px 8px;
+    font-size: 11px;
+  }
+  .modern-ehr .patient-banner {
+    padding: 15px;
+    border-radius: 10px;
+  }
+  .modern-ehr .patient-heading h1 {
+    font-size: 22px;
+  }
+  .modern-ehr .patient-identity {
+    gap: 10px;
+  }
+  .modern-ehr .patient-banner .patient-avatar {
+    height: 45px;
+    width: 45px;
+    border-radius: 12px;
+    font-size: 17px;
+  }
+  .modern-ehr .patient-identity p {
+    font-size: 10px;
+  }
+  .modern-ehr .patient-tags {
+    gap: 5px;
+  }
+  .modern-ehr .patient-tags .status-badge {
+    font-size: 9px;
+    padding: 4px 6px;
+  }
+  .modern-ehr .workspace-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 18px 12px;
+  }
+  .modern-ehr .chart-workspace,
+  .modern-ehr .right-column,
+  .modern-ehr .left-column {
+    width: 100%;
+  }
+  .modern-ehr .left-column {
+    position: static;
+    max-height: none;
+    overflow: visible;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .modern-ehr .left-column .field-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  .modern-ehr .patient-tabs {
+    border-radius: 8px;
+  }
+  .modern-ehr .patient-tabs button {
+    padding: 8px;
+  }
+  .modern-ehr .card-head,
+  .modern-ehr .card-body {
+    padding: 14px;
+  }
+  .modern-ehr .workspace-actions button {
+    padding: 0 7px;
+    font-size: 11px;
+  }
+  .modern-ehr .stats-grid {
+    gap: 8px;
+  }
+  .modern-ehr .profile-grid {
+    column-gap: 12px;
+  }
+  .modern-ehr .profile-grid dd {
+    font-size: 12px;
+  }
+  .modern-ehr .biomarker {
+    padding: 10px 7px;
+  }
+  .modern-ehr .biomarker > strong {
+    font-size: 13px;
+  }
+  .modern-ehr .workspace-footer {
+    padding: 12px;
+  }
+}

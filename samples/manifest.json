@@ -1,0 +1,351 @@
+[
+  {
+    "id": "breast_er_positive_her2_negative",
+    "title": "Breast ER positive HER2 negative",
+    "filename": "01_breast_er_positive_her2_negative.pdf",
+    "description": "Synthetic core biopsy with ER and PR positivity and HER2 IHC 1+.",
+    "expected_behavior": "Extract invasive breast carcinoma and the reported receptors; preserve unknown stage. With no authorized guideline evidence, show findings and the no-evidence limitation only.",
+    "findings": {
+      "cancer_type": {
+        "value": "Invasive carcinoma of the breast",
+        "quote": "Invasive carcinoma of the breast"
+      },
+      "histological_diagnosis": {
+        "value": "Invasive carcinoma of no special type",
+        "quote": "Histological diagnosis: Invasive carcinoma of no special type."
+      },
+      "stage_tnm": {
+        "value": "Not available in report",
+        "quote": ""
+      },
+      "grade": {
+        "value": "Nottingham grade 2 (score 6 of 9)",
+        "quote": "Histological grade: Nottingham grade 2 (score 6 of 9)."
+      },
+      "tumor_size": {
+        "value": "Largest contiguous invasive focus measures 12 mm. This is a core-biopsy measurement, not the overall tumor size",
+        "quote": "Largest contiguous invasive focus measures 12 mm. This is a core-biopsy measurement, not the overall tumor size."
+      },
+      "biomarkers": [
+        {
+          "name": "ER",
+          "value": "Positive, 95% of tumor nuclei, strong intensity",
+          "quote": "ER: Positive, 95% of tumor nuclei, strong intensity."
+        },
+        {
+          "name": "PR",
+          "value": "Positive, 70% of tumor nuclei, moderate to strong intensity",
+          "quote": "PR: Positive, 70% of tumor nuclei, moderate to strong intensity."
+        },
+        {
+          "name": "HER2",
+          "value": "IHC 1+ (negative)",
+          "quote": "HER2: IHC 1+ (negative)."
+        },
+        {
+          "name": "Ki-67",
+          "value": "18%",
+          "quote": "Ki-67: 18% of tumor nuclei."
+        }
+      ],
+      "other_findings": [
+        {
+          "value": "Lymphovascular invasion: Not identified in this limited sample",
+          "quote": "Lymphovascular invasion: Not identified in this limited sample."
+        },
+        {
+          "value": "Lymph nodes: Not submitted",
+          "quote": "Lymph nodes: Not submitted."
+        }
+      ],
+      "missing_information": [
+        "Overall tumor size",
+        "Clinical stage and staging evaluation",
+        "Nodal and distant metastatic status",
+        "Clinical history, performance status, and comorbidities",
+        "Prior cancer treatment and patient preferences"
+      ]
+    },
+    "sha256": "2eb6437a4441bbe73f09403b2ed4ad89ba0a715d61fa6695e9022aa953f82bf7"
+  },
+  {
+    "id": "breast_her2_positive",
+    "title": "Breast HER2 positive",
+    "filename": "02_breast_her2_positive.pdf",
+    "description": "Synthetic invasive breast core biopsy with HER2 IHC 3+ and negative hormone receptors.",
+    "expected_behavior": "Extract HER2 IHC 3+, ER/PR negative, and biopsy extent. Do not infer clinical stage, eligibility, or a regimen from pathology alone.",
+    "findings": {
+      "cancer_type": {
+        "value": "Invasive carcinoma of the breast",
+        "quote": "Invasive carcinoma of the breast"
+      },
+      "histological_diagnosis": {
+        "value": "Invasive carcinoma of no special type",
+        "quote": "Histological diagnosis: Invasive carcinoma of no special type."
+      },
+      "stage_tnm": {
+        "value": "Not available in report",
+        "quote": ""
+      },
+      "grade": {
+        "value": "Nottingham grade 3 (score 8 of 9)",
+        "quote": "Histological grade: Nottingham grade 3 (score 8 of 9)."
+      },
+      "tumor_size": {
+        "value": "Largest contiguous invasive focus measures 15 mm. Overall tumor size cannot be determined from this biopsy",
+        "quote": "Largest contiguous invasive focus measures 15 mm. Overall tumor size cannot be determined from this biopsy."
+      },
+      "biomarkers": [
+        {
+          "name": "ER",
+          "value": "Negative, less than 1%",
+          "quote": "ER: Negative, less than 1% of tumor nuclei."
+        },
+        {
+          "name": "PR",
+          "value": "Negative, less than 1%",
+          "quote": "PR: Negative, less than 1% of tumor nuclei."
+        },
+        {
+          "name": "HER2",
+          "value": "IHC 3+ (positive)",
+          "quote": "HER2: IHC 3+ (positive), complete intense membrane staining in 80% of invasive tumor cells."
+        },
+        {
+          "name": "Ki-67",
+          "value": "45%",
+          "quote": "Ki-67: 45% of tumor nuclei."
+        }
+      ],
+      "other_findings": [
+        {
+          "value": "Lymph nodes: Not submitted",
+          "quote": "Lymph nodes: Not submitted."
+        }
+      ],
+      "missing_information": [
+        "Overall tumor size",
+        "Baseline cardiac assessment where clinically relevant",
+        "Clinical stage and staging evaluation",
+        "Nodal and distant metastatic status",
+        "Clinical history, performance status, and comorbidities",
+        "Prior cancer treatment and patient preferences"
+      ]
+    },
+    "sha256": "74ebae0796e4973ee3fdcb4002d212ab5d14f531832ea1c667eb9958d2ef3e3f"
+  },
+  {
+    "id": "breast_triple_negative",
+    "title": "Breast triple negative",
+    "filename": "03_breast_triple_negative.pdf",
+    "description": "Synthetic invasive breast core biopsy with negative ER, PR, and HER2 results.",
+    "expected_behavior": "Extract the three negative receptor results without assuming germline status, PD-L1 status, clinical stage, or treatment eligibility.",
+    "findings": {
+      "cancer_type": {
+        "value": "Invasive carcinoma of the breast",
+        "quote": "Invasive carcinoma of the breast"
+      },
+      "histological_diagnosis": {
+        "value": "Invasive carcinoma of no special type",
+        "quote": "Histological diagnosis: Invasive carcinoma of no special type."
+      },
+      "stage_tnm": {
+        "value": "Not available in report",
+        "quote": ""
+      },
+      "grade": {
+        "value": "Nottingham grade 3 (score 9 of 9)",
+        "quote": "Histological grade: Nottingham grade 3 (score 9 of 9)."
+      },
+      "tumor_size": {
+        "value": "Largest contiguous invasive focus measures 10 mm. Overall tumor size is not established by this biopsy",
+        "quote": "Largest contiguous invasive focus measures 10 mm. Overall tumor size is not established by this biopsy."
+      },
+      "biomarkers": [
+        {
+          "name": "ER",
+          "value": "Negative, less than 1%",
+          "quote": "ER: Negative, less than 1% of tumor nuclei."
+        },
+        {
+          "name": "PR",
+          "value": "Negative, less than 1%",
+          "quote": "PR: Negative, less than 1% of tumor nuclei."
+        },
+        {
+          "name": "HER2",
+          "value": "IHC 0 (negative)",
+          "quote": "HER2: IHC 0 (negative)."
+        },
+        {
+          "name": "Ki-67",
+          "value": "75%",
+          "quote": "Ki-67: 75% of tumor nuclei."
+        }
+      ],
+      "other_findings": [
+        {
+          "value": "Lymph nodes: Not submitted",
+          "quote": "Lymph nodes: Not submitted."
+        }
+      ],
+      "missing_information": [
+        "Overall tumor size",
+        "PD-L1 status if clinically indicated",
+        "Germline testing and counseling eligibility",
+        "Clinical stage and staging evaluation",
+        "Nodal and distant metastatic status",
+        "Clinical history, performance status, and comorbidities",
+        "Prior cancer treatment and patient preferences"
+      ]
+    },
+    "sha256": "3e0c686eda04c9188445b95a7797aa179149c568dae598c5fe319ccc10e3aafc"
+  },
+  {
+    "id": "breast_incomplete",
+    "title": "Breast incomplete biomarkers",
+    "filename": "04_breast_incomplete_information.pdf",
+    "description": "Synthetic limited core biopsy deliberately omitting grade, size, stage, and receptor results.",
+    "expected_behavior": "Show Not available in report for all missing fields. Flag pending ER, PR, and HER2 results and do not invent a subtype, stage, or regimen.",
+    "findings": {
+      "cancer_type": {
+        "value": "Invasive carcinoma of the breast",
+        "quote": "Invasive carcinoma of the breast"
+      },
+      "histological_diagnosis": {
+        "value": "Invasive carcinoma, not further classified",
+        "quote": "Histological diagnosis: Invasive carcinoma, not further classified in this limited sample."
+      },
+      "grade": {
+        "value": "Not available in report",
+        "quote": ""
+      },
+      "tumor_size": {
+        "value": "Not available in report",
+        "quote": ""
+      },
+      "stage_tnm": {
+        "value": "Not available in report",
+        "quote": ""
+      },
+      "biomarkers": [
+        {
+          "name": "ER",
+          "value": "Not available in report",
+          "quote": ""
+        },
+        {
+          "name": "PR",
+          "value": "Not available in report",
+          "quote": ""
+        },
+        {
+          "name": "HER2",
+          "value": "Not available in report",
+          "quote": ""
+        },
+        {
+          "name": "Ki-67",
+          "value": "Not available in report",
+          "quote": ""
+        }
+      ],
+      "other_findings": [
+        {
+          "value": "ER, PR, and HER2 studies are pending; no results are supplied in this report",
+          "quote": "ER, PR, and HER2 studies are pending; no results are supplied in this report."
+        },
+        {
+          "value": "Lymph nodes: Not submitted",
+          "quote": "Lymph nodes: Not submitted."
+        }
+      ],
+      "missing_information": [
+        "Final histological classification and grade",
+        "Overall tumor size",
+        "ER, PR, and HER2 results",
+        "Ki-67 result if clinically relevant",
+        "Clinical stage and staging evaluation",
+        "Nodal and distant metastatic status",
+        "Clinical history, performance status, and comorbidities",
+        "Prior cancer treatment and patient preferences"
+      ]
+    },
+    "sha256": "e83d36c5a4ec6dcf3f779030280a043c1ca3897498636c3bc6d413955bbb461c"
+  },
+  {
+    "id": "breast_benign",
+    "title": "Breast benign biopsy",
+    "filename": "05_breast_benign_no_malignancy.pdf",
+    "description": "Synthetic benign breast biopsy used to verify that the app does not invent a cancer diagnosis or oncology pathway.",
+    "expected_behavior": "Report benign findings and no malignancy identified in the submitted tissue. Suppress cancer treatment pathways; do not claim the patient is cancer-free outside this specimen.",
+    "findings": {
+      "cancer_type": {
+        "value": "No atypia or malignancy identified in the submitted tissue",
+        "quote": "No atypia or malignancy identified in the submitted tissue."
+      },
+      "histological_diagnosis": {
+        "value": "Fibroadenoma with benign breast tissue",
+        "quote": "Histological diagnosis: Fibroadenoma with benign breast tissue."
+      },
+      "grade": {
+        "value": "Histological grade: Not applicable to the reported benign diagnosis",
+        "quote": "Histological grade: Not applicable to the reported benign diagnosis."
+      },
+      "tumor_size": {
+        "value": "Not available in report",
+        "quote": ""
+      },
+      "stage_tnm": {
+        "value": "Clinical stage/TNM: Not applicable to the reported benign diagnosis",
+        "quote": "Clinical stage/TNM: Not applicable to the reported benign diagnosis."
+      },
+      "biomarkers": [
+        {
+          "name": "ER",
+          "value": "Not available in report",
+          "quote": ""
+        },
+        {
+          "name": "PR",
+          "value": "Not available in report",
+          "quote": ""
+        },
+        {
+          "name": "HER2",
+          "value": "Not available in report",
+          "quote": ""
+        },
+        {
+          "name": "Ki-67",
+          "value": "Not available in report",
+          "quote": ""
+        }
+      ],
+      "other_findings": [
+        {
+          "value": "No invasive carcinoma or ductal carcinoma in situ identified in this sample",
+          "quote": "No invasive carcinoma or ductal carcinoma in situ identified in this sample."
+        },
+        {
+          "value": "ER, PR, HER2, and Ki-67 studies: Not performed",
+          "quote": "ER, PR, HER2, and Ki-67 studies: Not performed."
+        }
+      ],
+      "missing_information": [
+        "Imaging-pathology concordance",
+        "Clinical history and radiology report"
+      ]
+    },
+    "sha256": "a71ed8b131f9c937df7e3711b3a2e3e4ed7c62e248bc5596860d1383eac8989e"
+  },
+  {
+    "id": "scanned_image_only",
+    "title": "Image-only PDF negative test",
+    "filename": "06_scanned_image_only.pdf",
+    "description": "A rasterized copy of the first synthetic report, deliberately without a PDF text layer.",
+    "expected_behavior": "Reject with an actionable scanned/image-only PDF error. Do not send an empty report to the model or infer findings.",
+    "sha256": "33fb5db34bffb9b42ff919dbd3d30e1c50235acb0efe1c53599cc1b010669f60",
+    "findings": null
+  }
+]

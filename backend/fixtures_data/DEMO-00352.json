@@ -1,0 +1,747 @@
+{
+  "resourceType": "Bundle",
+  "id": "DEMO-00352-chart",
+  "type": "collection",
+  "timestamp": "2026-10-21T12:00:00Z",
+  "meta": {
+    "tag": [
+      {
+        "system": "https://cancercare.example/tags",
+        "code": "synthetic",
+        "display": "Synthetic demonstration data"
+      }
+    ]
+  },
+  "entry": [
+    {
+      "fullUrl": "https://cancercare.example/fhir/Patient/DEMO-00352",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "DEMO-00352",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "active": true,
+        "identifier": [
+          {
+            "system": "https://cancercare.example/demo-mrn",
+            "value": "DEMO-00352"
+          }
+        ],
+        "name": [
+          {
+            "use": "usual",
+            "text": "Noah Reynolds",
+            "family": "Reynolds",
+            "given": [
+              "Noah"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1963-09-04"
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Condition/DEMO-00352-diagnosis",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "DEMO-00352-diagnosis",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/DEMO-00352"
+        },
+        "code": {
+          "text": "Non-small cell lung cancer - adenocarcinoma"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "onsetDateTime": "2026-10-12",
+        "recordedDate": "2026-10-12",
+        "bodySite": [
+          {
+            "text": "Right upper lobe"
+          }
+        ],
+        "note": [
+          {
+            "text": "Synthetic diagnosis. Clinical stage and TNM are not established."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Observation/DEMO-00352-egfr",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DEMO-00352-egfr",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "registered",
+        "code": {
+          "text": "EGFR"
+        },
+        "subject": {
+          "reference": "Patient/DEMO-00352"
+        },
+        "effectiveDateTime": "2026-10-12",
+        "note": [
+          {
+            "text": "Synthetic chart status: Pending"
+          }
+        ],
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "code": "temp-unknown"
+            }
+          ],
+          "text": "Pending"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Observation/DEMO-00352-alk",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DEMO-00352-alk",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "registered",
+        "code": {
+          "text": "ALK"
+        },
+        "subject": {
+          "reference": "Patient/DEMO-00352"
+        },
+        "effectiveDateTime": "2026-10-12",
+        "note": [
+          {
+            "text": "Synthetic chart status: Pending"
+          }
+        ],
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "code": "temp-unknown"
+            }
+          ],
+          "text": "Pending"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Observation/DEMO-00352-pdl1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DEMO-00352-pdl1",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "registered",
+        "code": {
+          "text": "PD-L1"
+        },
+        "subject": {
+          "reference": "Patient/DEMO-00352"
+        },
+        "effectiveDateTime": "2026-10-12",
+        "note": [
+          {
+            "text": "Synthetic chart status: Pending"
+          }
+        ],
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "code": "temp-unknown"
+            }
+          ],
+          "text": "Pending"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Observation/DEMO-00352-ros1",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DEMO-00352-ros1",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "registered",
+        "code": {
+          "text": "ROS1"
+        },
+        "subject": {
+          "reference": "Patient/DEMO-00352"
+        },
+        "effectiveDateTime": "2026-10-12",
+        "note": [
+          {
+            "text": "Synthetic chart status: Pending"
+          }
+        ],
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "code": "temp-unknown"
+            }
+          ],
+          "text": "Pending"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Observation/DEMO-00352-stage",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DEMO-00352-stage",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "registered",
+        "code": {
+          "text": "Clinical stage / TNM"
+        },
+        "subject": {
+          "reference": "Patient/DEMO-00352"
+        },
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "code": "unknown"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/DiagnosticReport/DEMO-00352-pathology-report",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DEMO-00352-pathology-report",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "final",
+        "code": {
+          "text": "Pathology - lung biopsy"
+        },
+        "subject": {
+          "reference": "Patient/DEMO-00352"
+        },
+        "effectiveDateTime": "2026-10-12",
+        "result": [
+          {
+            "reference": "Observation/DEMO-00352-egfr"
+          },
+          {
+            "reference": "Observation/DEMO-00352-alk"
+          },
+          {
+            "reference": "Observation/DEMO-00352-pdl1"
+          },
+          {
+            "reference": "Observation/DEMO-00352-ros1"
+          }
+        ],
+        "conclusion": "Non-small cell lung cancer - adenocarcinoma",
+        "presentedForm": [
+          {
+            "contentType": "application/pdf",
+            "url": "/api/patients/DEMO-00352/documents/pathology/pdf",
+            "title": "Pathology - lung biopsy"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/DocumentReference/DEMO-00352-pathology-document",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "DEMO-00352-pathology-document",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "current",
+        "docStatus": "final",
+        "subject": {
+          "reference": "Patient/DEMO-00352"
+        },
+        "type": {
+          "text": "Pathology"
+        },
+        "date": "2026-10-12T12:00:00Z",
+        "description": "Synthetic document for software testing",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "application/pdf",
+              "url": "/api/patients/DEMO-00352/documents/pathology/pdf",
+              "title": "Pathology - lung biopsy",
+              "creation": "2026-10-12"
+            }
+          }
+        ],
+        "context": {
+          "related": [
+            {
+              "reference": "DiagnosticReport/DEMO-00352-pathology-report"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/DiagnosticReport/DEMO-00352-imaging-report",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DEMO-00352-imaging-report",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "final",
+        "code": {
+          "text": "Chest CT summary"
+        },
+        "subject": {
+          "reference": "Patient/DEMO-00352"
+        },
+        "effectiveDateTime": "2026-10-14",
+        "result": [],
+        "conclusion": "See synthetic document; incomplete staging context.",
+        "presentedForm": [
+          {
+            "contentType": "application/pdf",
+            "url": "/api/patients/DEMO-00352/documents/imaging/pdf",
+            "title": "Chest CT summary"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/DocumentReference/DEMO-00352-imaging-document",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "DEMO-00352-imaging-document",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "current",
+        "docStatus": "final",
+        "subject": {
+          "reference": "Patient/DEMO-00352"
+        },
+        "type": {
+          "text": "Imaging"
+        },
+        "date": "2026-10-14T12:00:00Z",
+        "description": "Synthetic document for software testing",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "application/pdf",
+              "url": "/api/patients/DEMO-00352/documents/imaging/pdf",
+              "title": "Chest CT summary",
+              "creation": "2026-10-14"
+            }
+          }
+        ],
+        "context": {
+          "related": [
+            {
+              "reference": "DiagnosticReport/DEMO-00352-imaging-report"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Practitioner/demo-oncologist",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "demo-oncologist",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "name": [
+          {
+            "text": "Dr. E. Morgan (demo)"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Practitioner/demo-navigator",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "demo-navigator",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "name": [
+          {
+            "text": "Jordan Lee, RN (demo)"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/CareTeam/DEMO-00352-careteam",
+      "resource": {
+        "resourceType": "CareTeam",
+        "id": "DEMO-00352-careteam",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "active",
+        "subject": {
+          "reference": "Patient/DEMO-00352"
+        },
+        "name": "Synthetic oncology team",
+        "participant": [
+          {
+            "role": [
+              {
+                "text": "Oncologist"
+              }
+            ],
+            "member": {
+              "reference": "Practitioner/demo-oncologist"
+            }
+          },
+          {
+            "role": [
+              {
+                "text": "Nurse navigator"
+              }
+            ],
+            "member": {
+              "reference": "Practitioner/demo-navigator"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Encounter/DEMO-00352-intake",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "DEMO-00352-intake",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/DEMO-00352"
+        },
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "text": "Synthetic oncology navigation intake"
+          }
+        ],
+        "period": {
+          "start": "2026-10-19T10:00:00Z",
+          "end": "2026-10-19T10:30:00Z"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/List/DEMO-00352-medications",
+      "resource": {
+        "resourceType": "List",
+        "id": "DEMO-00352-medications",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "current",
+        "mode": "snapshot",
+        "subject": {
+          "reference": "Patient/DEMO-00352"
+        },
+        "code": {
+          "text": "Home medications"
+        },
+        "emptyReason": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+              "code": "unavailable"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Medication history is not reconciled. No MedicationStatement or MedicationRequest is asserted."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Task/DEMO-00352-gap-0",
+      "resource": {
+        "resourceType": "Task",
+        "id": "DEMO-00352-gap-0",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "requested",
+        "intent": "proposal",
+        "description": "Complete TNM stage and PET/CT review",
+        "for": {
+          "reference": "Patient/DEMO-00352"
+        },
+        "owner": {
+          "reference": "Practitioner/demo-navigator"
+        },
+        "note": [
+          {
+            "text": "Synthetic information-gathering task; not a clinical order."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Task/DEMO-00352-gap-1",
+      "resource": {
+        "resourceType": "Task",
+        "id": "DEMO-00352-gap-1",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "requested",
+        "intent": "proposal",
+        "description": "Molecular panel and PD-L1 results",
+        "for": {
+          "reference": "Patient/DEMO-00352"
+        },
+        "owner": {
+          "reference": "Practitioner/demo-navigator"
+        },
+        "note": [
+          {
+            "text": "Synthetic information-gathering task; not a clinical order."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Task/DEMO-00352-gap-2",
+      "resource": {
+        "resourceType": "Task",
+        "id": "DEMO-00352-gap-2",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "requested",
+        "intent": "proposal",
+        "description": "Performance status and complete comorbidity review",
+        "for": {
+          "reference": "Patient/DEMO-00352"
+        },
+        "owner": {
+          "reference": "Practitioner/demo-navigator"
+        },
+        "note": [
+          {
+            "text": "Synthetic information-gathering task; not a clinical order."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Provenance/DEMO-00352-fixture-provenance",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "DEMO-00352-fixture-provenance",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "target": [
+          {
+            "reference": "Patient/DEMO-00352"
+          }
+        ],
+        "recorded": "2026-10-21T12:00:00Z",
+        "activity": {
+          "text": "Authored synthetic fixture"
+        },
+        "agent": [
+          {
+            "who": {
+              "display": "CancerCare AI synthetic fixture generator"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

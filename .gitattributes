@@ -1,0 +1,4 @@
+# Keep fixture bytes intact when Git checks out files on Windows or Linux.
+*.pdf binary
+*.zip binary
+*.png binary

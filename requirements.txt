@@ -1,0 +1,16 @@
+streamlit>=1.66,<2
+openai>=2.0,<3
+pydantic>=2.10,<3
+PyMuPDF>=1.25,<2
+numpy>=2.0,<3
+python-dotenv>=1.0,<2
+reportlab>=4.0,<5
+pypdfium2>=4.30,<6
+pytest>=8.0,<9
+fastembed>=0.9,<1
+pyarrow>=17,<27
+requests>=2.32,<3
+fastapi>=0.115,<1
+uvicorn>=0.32,<1
+python-multipart>=0.0.20,<1
+httpx>=0.28,<1

@@ -1,0 +1,768 @@
+{
+  "resourceType": "Bundle",
+  "id": "DEMO-00248-chart",
+  "type": "collection",
+  "timestamp": "2026-10-21T12:00:00Z",
+  "meta": {
+    "tag": [
+      {
+        "system": "https://cancercare.example/tags",
+        "code": "synthetic",
+        "display": "Synthetic demonstration data"
+      }
+    ]
+  },
+  "entry": [
+    {
+      "fullUrl": "https://cancercare.example/fhir/Patient/DEMO-00248",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "DEMO-00248",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "active": true,
+        "identifier": [
+          {
+            "system": "https://cancercare.example/demo-mrn",
+            "value": "DEMO-00248"
+          }
+        ],
+        "name": [
+          {
+            "use": "usual",
+            "text": "Ava Mitchell",
+            "family": "Mitchell",
+            "given": [
+              "Ava"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1972-04-18"
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Condition/DEMO-00248-diagnosis",
+      "resource": {
+        "resourceType": "Condition",
+        "id": "DEMO-00248-diagnosis",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/DEMO-00248"
+        },
+        "code": {
+          "text": "Invasive ductal carcinoma of the left breast"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "onsetDateTime": "2026-10-14",
+        "recordedDate": "2026-10-14",
+        "bodySite": [
+          {
+            "text": "Left breast"
+          }
+        ],
+        "note": [
+          {
+            "text": "Synthetic diagnosis. Clinical stage and TNM are not established."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Observation/DEMO-00248-er",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DEMO-00248-er",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "final",
+        "code": {
+          "text": "ER"
+        },
+        "subject": {
+          "reference": "Patient/DEMO-00248"
+        },
+        "effectiveDateTime": "2026-10-14",
+        "note": [
+          {
+            "text": "Synthetic chart status: Positive 92%"
+          }
+        ],
+        "valueString": "Positive 92%"
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Observation/DEMO-00248-pr",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DEMO-00248-pr",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "final",
+        "code": {
+          "text": "PR"
+        },
+        "subject": {
+          "reference": "Patient/DEMO-00248"
+        },
+        "effectiveDateTime": "2026-10-14",
+        "note": [
+          {
+            "text": "Synthetic chart status: Positive 65%"
+          }
+        ],
+        "valueString": "Positive 65%"
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Observation/DEMO-00248-her2",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DEMO-00248-her2",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "final",
+        "code": {
+          "text": "HER2"
+        },
+        "subject": {
+          "reference": "Patient/DEMO-00248"
+        },
+        "effectiveDateTime": "2026-10-14",
+        "note": [
+          {
+            "text": "Synthetic chart status: IHC 0 / negative"
+          }
+        ],
+        "valueString": "IHC 0 / negative"
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Observation/DEMO-00248-ki67",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DEMO-00248-ki67",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "final",
+        "code": {
+          "text": "Ki-67"
+        },
+        "subject": {
+          "reference": "Patient/DEMO-00248"
+        },
+        "effectiveDateTime": "2026-10-14",
+        "note": [
+          {
+            "text": "Synthetic chart status: 18%"
+          }
+        ],
+        "valueString": "18%"
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Observation/DEMO-00248-stage",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "DEMO-00248-stage",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "registered",
+        "code": {
+          "text": "Clinical stage / TNM"
+        },
+        "subject": {
+          "reference": "Patient/DEMO-00248"
+        },
+        "dataAbsentReason": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+              "code": "unknown"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/DiagnosticReport/DEMO-00248-pathology-report",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DEMO-00248-pathology-report",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "final",
+        "code": {
+          "text": "Pathology - core biopsy"
+        },
+        "subject": {
+          "reference": "Patient/DEMO-00248"
+        },
+        "effectiveDateTime": "2026-10-14",
+        "result": [
+          {
+            "reference": "Observation/DEMO-00248-er"
+          },
+          {
+            "reference": "Observation/DEMO-00248-pr"
+          },
+          {
+            "reference": "Observation/DEMO-00248-her2"
+          },
+          {
+            "reference": "Observation/DEMO-00248-ki67"
+          }
+        ],
+        "conclusion": "Invasive ductal carcinoma of the left breast",
+        "presentedForm": [
+          {
+            "contentType": "application/pdf",
+            "url": "/api/patients/DEMO-00248/documents/pathology/pdf",
+            "title": "Pathology - core biopsy"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/DocumentReference/DEMO-00248-pathology-document",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "DEMO-00248-pathology-document",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "current",
+        "docStatus": "final",
+        "subject": {
+          "reference": "Patient/DEMO-00248"
+        },
+        "type": {
+          "text": "Pathology"
+        },
+        "date": "2026-10-14T12:00:00Z",
+        "description": "Synthetic document for software testing",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "application/pdf",
+              "url": "/api/patients/DEMO-00248/documents/pathology/pdf",
+              "title": "Pathology - core biopsy",
+              "creation": "2026-10-14"
+            }
+          }
+        ],
+        "context": {
+          "related": [
+            {
+              "reference": "DiagnosticReport/DEMO-00248-pathology-report"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/DiagnosticReport/DEMO-00248-imaging-report",
+      "resource": {
+        "resourceType": "DiagnosticReport",
+        "id": "DEMO-00248-imaging-report",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "final",
+        "code": {
+          "text": "Breast imaging summary"
+        },
+        "subject": {
+          "reference": "Patient/DEMO-00248"
+        },
+        "effectiveDateTime": "2026-10-16",
+        "result": [],
+        "conclusion": "See synthetic document; incomplete staging context.",
+        "presentedForm": [
+          {
+            "contentType": "application/pdf",
+            "url": "/api/patients/DEMO-00248/documents/imaging/pdf",
+            "title": "Breast imaging summary"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/DocumentReference/DEMO-00248-imaging-document",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "id": "DEMO-00248-imaging-document",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "current",
+        "docStatus": "final",
+        "subject": {
+          "reference": "Patient/DEMO-00248"
+        },
+        "type": {
+          "text": "Imaging"
+        },
+        "date": "2026-10-16T12:00:00Z",
+        "description": "Synthetic document for software testing",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "application/pdf",
+              "url": "/api/patients/DEMO-00248/documents/imaging/pdf",
+              "title": "Breast imaging summary",
+              "creation": "2026-10-16"
+            }
+          }
+        ],
+        "context": {
+          "related": [
+            {
+              "reference": "DiagnosticReport/DEMO-00248-imaging-report"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/AllergyIntolerance/DEMO-00248-allergy-0",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "DEMO-00248-allergy-0",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "patient": {
+          "reference": "Patient/DEMO-00248"
+        },
+        "code": {
+          "text": "Sulfa"
+        },
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "code": "unconfirmed"
+            }
+          ]
+        },
+        "reaction": [
+          {
+            "manifestation": [
+              {
+                "text": "Rash"
+              }
+            ]
+          }
+        ],
+        "note": [
+          {
+            "text": "Synthetic chart; confirm allergy history."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Practitioner/demo-oncologist",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "demo-oncologist",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "name": [
+          {
+            "text": "Dr. E. Morgan (demo)"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Practitioner/demo-navigator",
+      "resource": {
+        "resourceType": "Practitioner",
+        "id": "demo-navigator",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "name": [
+          {
+            "text": "Jordan Lee, RN (demo)"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/CareTeam/DEMO-00248-careteam",
+      "resource": {
+        "resourceType": "CareTeam",
+        "id": "DEMO-00248-careteam",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "active",
+        "subject": {
+          "reference": "Patient/DEMO-00248"
+        },
+        "name": "Synthetic oncology team",
+        "participant": [
+          {
+            "role": [
+              {
+                "text": "Oncologist"
+              }
+            ],
+            "member": {
+              "reference": "Practitioner/demo-oncologist"
+            }
+          },
+          {
+            "role": [
+              {
+                "text": "Nurse navigator"
+              }
+            ],
+            "member": {
+              "reference": "Practitioner/demo-navigator"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Encounter/DEMO-00248-intake",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "DEMO-00248-intake",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "finished",
+        "subject": {
+          "reference": "Patient/DEMO-00248"
+        },
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "text": "Synthetic oncology navigation intake"
+          }
+        ],
+        "period": {
+          "start": "2026-10-19T10:00:00Z",
+          "end": "2026-10-19T10:30:00Z"
+        }
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/List/DEMO-00248-medications",
+      "resource": {
+        "resourceType": "List",
+        "id": "DEMO-00248-medications",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "current",
+        "mode": "snapshot",
+        "subject": {
+          "reference": "Patient/DEMO-00248"
+        },
+        "code": {
+          "text": "Home medications"
+        },
+        "emptyReason": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+              "code": "unavailable"
+            }
+          ]
+        },
+        "note": [
+          {
+            "text": "Medication history is not reconciled. No MedicationStatement or MedicationRequest is asserted."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Task/DEMO-00248-gap-0",
+      "resource": {
+        "resourceType": "Task",
+        "id": "DEMO-00248-gap-0",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "requested",
+        "intent": "proposal",
+        "description": "Clinical TNM staging and nodal status",
+        "for": {
+          "reference": "Patient/DEMO-00248"
+        },
+        "owner": {
+          "reference": "Practitioner/demo-navigator"
+        },
+        "note": [
+          {
+            "text": "Synthetic information-gathering task; not a clinical order."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Task/DEMO-00248-gap-1",
+      "resource": {
+        "resourceType": "Task",
+        "id": "DEMO-00248-gap-1",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "requested",
+        "intent": "proposal",
+        "description": "Final imaging review and multidisciplinary context",
+        "for": {
+          "reference": "Patient/DEMO-00248"
+        },
+        "owner": {
+          "reference": "Practitioner/demo-navigator"
+        },
+        "note": [
+          {
+            "text": "Synthetic information-gathering task; not a clinical order."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Task/DEMO-00248-gap-2",
+      "resource": {
+        "resourceType": "Task",
+        "id": "DEMO-00248-gap-2",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "status": "requested",
+        "intent": "proposal",
+        "description": "Patient goals, comorbidities and performance status",
+        "for": {
+          "reference": "Patient/DEMO-00248"
+        },
+        "owner": {
+          "reference": "Practitioner/demo-navigator"
+        },
+        "note": [
+          {
+            "text": "Synthetic information-gathering task; not a clinical order."
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "https://cancercare.example/fhir/Provenance/DEMO-00248-fixture-provenance",
+      "resource": {
+        "resourceType": "Provenance",
+        "id": "DEMO-00248-fixture-provenance",
+        "meta": {
+          "versionId": "1",
+          "tag": [
+            {
+              "system": "https://cancercare.example/tags",
+              "code": "synthetic",
+              "display": "Synthetic demonstration data"
+            }
+          ]
+        },
+        "target": [
+          {
+            "reference": "Patient/DEMO-00248"
+          }
+        ],
+        "recorded": "2026-10-21T12:00:00Z",
+        "activity": {
+          "text": "Authored synthetic fixture"
+        },
+        "agent": [
+          {
+            "who": {
+              "display": "CancerCare AI synthetic fixture generator"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

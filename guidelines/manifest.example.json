@@ -1,0 +1,15 @@
+{
+  "files": [
+    {
+      "file": "authorized-breast-guideline.pdf",
+      "title": "<Copy the actual guideline title>",
+      "version": "<Copy the actual version and year>",
+      "publisher": "<Copy the actual publisher>",
+      "authorized": false,
+      "allow_external_processing": false,
+      "version_verified": false,
+      "section": "",
+      "cancer_types": ["breast"]
+    }
+  ]
+}

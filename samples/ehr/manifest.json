@@ -1,0 +1,66 @@
+{
+  "synthetic": true,
+  "snapshot_date": "2026-10-21",
+  "documents": [
+    {
+      "filename": "breast-pathology.pdf",
+      "patient_id": "DEMO-00248",
+      "document_id": "pathology",
+      "expected": "Actual text extraction; missing stage/size; no guideline evidence or treatment pathways.",
+      "sha256": "e2bc5cf282dd9b23824ca5fc5ca44fcca5431a584b086b25ff67dbb75962b5cc"
+    },
+    {
+      "filename": "breast-imaging.pdf",
+      "patient_id": "DEMO-00248",
+      "document_id": "imaging",
+      "expected": "Viewable supporting document; no pathology measurements or stage should be inferred.",
+      "sha256": "2072bb1269a60a2bbeb52c4a21846523adf7edbfd6ae86fd4e7eb1cbd791820c"
+    },
+    {
+      "filename": "lung-pathology.pdf",
+      "patient_id": "DEMO-00352",
+      "document_id": "pathology",
+      "expected": "Actual text extraction; missing stage/size; no guideline evidence or treatment pathways.",
+      "sha256": "6ad368488e02db571bdf14b12382a3c9d7e05242f28479ee5dcd6f5ae5ae8d09"
+    },
+    {
+      "filename": "lung-imaging.pdf",
+      "patient_id": "DEMO-00352",
+      "document_id": "imaging",
+      "expected": "Viewable supporting document; no pathology measurements or stage should be inferred.",
+      "sha256": "28ae6f684d4d97cea0dd26b915a0c408f1b90d33b4e87fcf46d07ad6ed4c770c"
+    },
+    {
+      "filename": "colon-pathology.pdf",
+      "patient_id": "DEMO-00419",
+      "document_id": "pathology",
+      "expected": "Actual text extraction; missing stage/size; no guideline evidence or treatment pathways.",
+      "sha256": "870186d062cb2fab7cd520aff7832534fb247dede9ea8e828c49eb8a4df63008"
+    },
+    {
+      "filename": "colon-endoscopy.pdf",
+      "patient_id": "DEMO-00419",
+      "document_id": "endoscopy",
+      "expected": "Viewable supporting document; no clinical stage should be inferred.",
+      "sha256": "e9c95f1bf5121e0890f8513430da8b2b230ab6d6c8c03451345e20e8b3a90b5d"
+    },
+    {
+      "filename": "breast-contradiction.pdf",
+      "patient_id": "DEMO-00248",
+      "expected": "ER and HER2 conflict with the chart; show reconciliation and block approval until acknowledged.",
+      "sha256": "f0628eefde00901ae6ef275d052c2d503ed09207b09928daa03126bd267ae8be"
+    },
+    {
+      "filename": "missing-findings.pdf",
+      "patient_id": "DEMO-00248",
+      "expected": "Missing facts remain unknown; no inferred diagnosis, stage, biomarker negatives or pathway.",
+      "sha256": "1638ebc15991b83187039b7a5770044be757292192b6421cc7994250b85153b9"
+    },
+    {
+      "filename": "scanned-report.pdf",
+      "patient_id": "DEMO-00248",
+      "expected": "Reject with actionable OCR/text-PDF error; do not claim successful extraction.",
+      "sha256": "159a329a141963d1f4510395c40531198caac3adab7784b92fe3432e03be6e80"
+    }
+  ]
+}
